@@ -1,0 +1,35 @@
+.pageheader-wrapper {
+  width: 49.125rem;
+  height: 13rem;
+  margin-bottom: 2rem;
+  border: 0.0625rem dashed var(--border-section-color);
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.header {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__title {
+  font-family: "Ubuntu", Arial, sans-serif;
+  color: var(--main-text-color);
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.container_header {
+  position: absolute;
+  top: 3rem;
+  right: -2rem;
+}

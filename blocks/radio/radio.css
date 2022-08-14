@@ -1,0 +1,31 @@
+.radio-wrapper {
+  width: 16rem;
+  height: 12rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 0.0625rem dashed var(--border-section-color);
+  border-radius: 0.3125rem;
+}
+
+.radio-container {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+
+.radio-container__area {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--main-background-color);
+  border: 0.0625rem solid var(--secondary-color);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  outline-color: var(--main-color);
+}
+
+.radio-container__area:checked {
+  border: 0.25rem solid var(--main-color);
+}

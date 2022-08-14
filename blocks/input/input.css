@@ -1,0 +1,86 @@
+.input-wrapper {
+  width: 22rem;
+  height: 22.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 0.0625rem dashed var(--border-section-color);
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+}
+
+.input-container {
+  width: 16rem;
+  height: 3.5rem;
+  font-family: "Ubuntu", Arial, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.input-container__title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.input-container__wrapper {
+  position: relative;
+}
+
+.input-container__field {
+  flex-wrap: wrap;
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  box-sizing: border-box;
+  border: 0.0625rem solid var(--main-color);
+  border-radius: 0.25rem;
+}
+
+.input-container__field:focus {
+  outline-color: var(--main-color);
+}
+
+::placeholder {
+  color: var(--secondary-color);
+}
+
+.input-container__field_incorrect {
+  border-color: var(--incorrect-state-border-color);
+}
+
+.input-container__field_locked {
+  background-color: var(--secondary-color);
+}
+
+.input-container__button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
+
+.input-container__icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.input-container__icon_delete {
+  fill: none;
+  stroke: var(--secondary-color);
+}
+
+.input-container__icon_locked {
+  fill: var(--main-text-color);
+  stroke: none;
+}

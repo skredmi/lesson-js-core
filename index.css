@@ -1,0 +1,23 @@
+@import url(vendor/normalize.css);
+@import url(vendor/fonts/fonts.css);
+@import url(blocks/input/input.css);
+@import url(blocks/searchbar/searchbar.css);
+@import url(blocks/checkbox/checkbox.css);
+@import url(blocks/radio/radio.css);
+@import url(blocks/button/button.css);
+@import url(blocks/dropdown/dropdown.css);
+@import url(blocks/pageheader/pageheader.css);
+
+:root {
+  --main-color: #459df5;
+  --secondary-color: #bad8f5;
+  --main-text-color: #000000;
+  --main-background-color: #ffffff;
+  --incorrect-state-border-color: #f53152;
+  --border-section-color: #8055ff;
+  --dropdown-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  padding: 1rem;
+}
