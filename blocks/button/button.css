@@ -32,67 +32,63 @@
 }
 
 .button {
+  height: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   border: none;
   border-radius: 0.25rem;
-  color: var(--main-background-color);
   font-family: "Ubuntu", Arial, sans-serif;
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1rem;
   text-align: center;
   cursor: pointer;
-  outline-color: var(--secondary-color);
   box-sizing: border-box;
 }
 
-.blue {
+.button_color_primary {
   background-color: var(--main-color);
   color: var(--main-background-color);
+  outline-color: var(--secondary-color);
 }
 
-.transparent {
+.button_color_transparent {
   background-color: transparent;
   color: var(--main-color);
   outline-color: var(--secondary-color);
 }
 
-.black {
+.button_color_black {
   background-color: transparent;
   color: var(--main-text-color);
   outline-color: var(--secondary-color);
 }
 
-.button_medium-size {
-  width: 7rem;
-  height: 2rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+.button_color_transparent .button__icon {
+  fill: var(--main-color);
 }
-.button_medium-text {
-  width: 5.5rem;
+
+.button_color_black .button__icon {
+  fill: var(--main-text-color);
+}
+
+.button_text_only {
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-.button_medium-image {
-  width: 2rem;
+.button_icon_only {
   padding: 0.5rem;
 }
 
-.button_small-size {
-  width: 5.75rem;
+.button_size_small {
   height: 1.5rem;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
-.button_small-text {
-  width: 4.5rem;
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-}
-
-.button-small-image {
-  width: 1.5rem;
+.button_size_small .button__icon_only {
   padding: 0.25rem;
 }
 
@@ -101,12 +97,4 @@
   height: 1rem;
   fill: var(--main-background-color);
   stroke: none;
-}
-
-.button__icon_transparent {
-  fill: var(--main-color);
-}
-
-.button__icon_black {
-  fill: var(--main-text-color);
 }

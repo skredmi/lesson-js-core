@@ -12,15 +12,13 @@
 <body>
   <div class="input-wrapper">
     <div class="input-container">
-      <p class="input-container__title">Дата и время заказа</p>
-      <label class="input-container__wrapper">
-        <input type="text" name="order" id="order-input" class="input-container__field" placeholder="Введите" />
+      <label class="input-container__title">Дата и время заказа
+        <input type="text" name="order" class="input-container__field" placeholder="Введите" />
       </label>
     </div>
     <div class="input-container">
-      <p class="input-container__title">Дата и время заказа</p>
-      <label class="input-container__wrapper">
-        <input type="text" name="order" id="order-input" class="input-container__field input-container__field_incorrect"
+      <label class="input-container__title">Дата и время заказа
+        <input type="text" name="order" class="input-container__field input-container__field_incorrect"
           placeholder="Введите" value="06.12.2021" />
         <button class="input-container__button"><svg class="input-container__icon input-container__icon_delete"
             viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -29,25 +27,22 @@
       </label>
     </div>
     <div class="input-container">
-      <p class="input-container__title">Дата и время заказа</p>
-      <label class="input-container__wrapper">
-        <input type="text" name="order" id="order-input" class="input-container__field input-container__field_locked"
-          placeholder="Введите" value="06.12.2021" />
-        <button class="input-container__button">
-          <svg class="input-container__icon input-container__icon_locked" viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" />
-            <path d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z" />
-          </svg>
-        </button>
+      <label class="input-container__title">Дата и время заказа
+        <input type="text" name="order" class="input-container__field" disabled placeholder="Введите"
+          value="06.12.2021" />
+        <svg class="input-container__icon input-container__icon_locked" viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" />
+          <path d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z" />
+        </svg>
       </label>
     </div>
   </div>
   <div class="searchbar-wrapper">
     <div class="input-container">
-      <label class="input-container__wrapper">
-        <input type="text" name="order" id="order-input" class="input-container__field input-container__field_search"
+      <label class="input-container__title">
+        <input type="text" name="order" class="input-container__field input-container__field_search"
           placeholder="Номер заказа или ФИО" />
         <button class="input-container__button input-container__button_search">
           <svg class="input-container__icon input-container__icon_search" viewBox="0 0 16 16"
@@ -57,13 +52,12 @@
               fill="none" />
           </svg>
         </button>
-
       </label>
     </div>
     <div class="input-container">
-      <label class="input-container__wrapper">
-        <input type="text" name="order" id="order-input" class="input-container__field input-container__field_search"
-          value="50744" />
+      <label class="input-container__title">
+        <input type="text" name="order" class="input-container__field input-container__field_search"
+          placeholder="Номер заказа или ФИО" value="50744" />
         <button class="input-container__button input-container__button_search">
           <svg class="input-container__icon input-container__icon_search" viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg">
@@ -102,19 +96,19 @@
   </div>
   <div class="radio-wrapper">
     <div class="radio-container">
-      <label>
-        <input type="radio" class="radio-container__area" />
+      <label for="radio">
+        <input type="radio" name="radio" class="radio-container__area" />
       </label>
     </div>
     <div class="radio-container">
-      <label>
-        <input type="radio" class="radio-container__area" checked />
+      <label for="radio">
+        <input type="radio" name="radio" class="radio-container__area" />
       </label>
     </div>
   </div>
   <div class="button-wrapper">
     <div class="button-wrapper-top">
-      <button class="button blue button_medium-size">
+      <button class="button button_color_primary">
         <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
@@ -128,10 +122,10 @@
         </svg>
         Text here
       </button>
-      <button class="button blue button_medium-text">
+      <button class="button button_color_primary button_text_only">
         Text here
       </button>
-      <button class="button blue button_medium-image">
+      <button class="button button_color_primary button_icon_only">
         <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
@@ -144,8 +138,8 @@
           <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
         </svg>
       </button>
-      <button class="button transparent button_medium-size">
-        <svg class="button__icon button__icon_transparent" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <button class="button button_color_transparent">
+        <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
           <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
@@ -158,11 +152,11 @@
         </svg>
         Text here
       </button>
-      <button class="button transparent button_medium-text">
+      <button class="button button_color_transparent button_text_only">
         Text here
       </button>
-      <button class="button transparent button_medium-image">
-        <svg class="button__icon button__icon_transparent" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <button class="button button_color_transparent button_icon_only">
+        <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
           <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
@@ -174,8 +168,8 @@
           <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
         </svg>
       </button>
-      <button class="button black button_medium-size">
-        <svg class="button__icon button__icon_black" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <button class="button button_color_black">
+        <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
           <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
@@ -188,10 +182,10 @@
         </svg>
         Text here
       </button>
-      <button class="button black button_medium-text">
+      <button class="button button_color_black button_text_only">
         Text here
       </button>
-      <button class="button black button_medium-image">
+      <button class="button button_color_black button_icon_only">
         <svg class="button__icon button__icon_black" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
@@ -206,7 +200,7 @@
       </button>
     </div>
     <div class="button-wrapper-bottom">
-      <button class="button blue button_small-size">
+      <button class="button button_color_primary button_size_small">
         <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
@@ -220,10 +214,10 @@
         </svg>
         Text here
       </button>
-      <button class="button blue button_small-text">
+      <button class="button button_color_primary button_size_small button_text_only">
         Text here
       </button>
-      <button class="button blue button-small-image">
+      <button class="button button_color_primary button_size_small button_icon_only">
         <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
@@ -236,7 +230,7 @@
           <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
         </svg>
       </button>
-      <button class="button transparent button_small-size">
+      <button class="button button_color_transparent button_size_small">
         <svg class="button__icon button__icon_transparent" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
@@ -250,11 +244,11 @@
         </svg>
         Text here
       </button>
-      <button class="button transparent button_small-text">
+      <button class="button button_color_transparent button_size_small button_text_only">
         Text here
       </button>
-      <button class="button transparent button-small-image">
-        <svg class="button__icon button__icon_transparent" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <button class="button button_color_transparent button_size_small button_icon_only">
+        <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
           <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
@@ -273,133 +267,166 @@
       <div class="container">
         <div class="container__item">
           <div class="checkbox-container">
-            <label>
+            <label class="checkbox-container__wrapper">
               <input type="checkbox" class="checkbox-container__area" />
+              <span class="checkbox-container__title">Новый</span>
               <svg class="checkbox-container__checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
               </svg>
             </label>
           </div>
-          <p class="container__item-title">Новый</p>
         </div>
         <div class="container__item">
           <div class="checkbox-container">
-            <label>
+            <label class="checkbox-container__wrapper">
               <input type="checkbox" class="checkbox-container__area" />
+              <span class="checkbox-container__title">Рассчет</span>
               <svg class="checkbox-container__checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
               </svg>
             </label>
           </div>
-          <p class="container__item-title">Рассчет</p>
         </div>
         <div class="container__item">
           <div class="checkbox-container">
-            <label>
+            <label class="checkbox-container__wrapper">
               <input type="checkbox" class="checkbox-container__area" checked />
+              <span class="checkbox-container__title">Подтвержден</span>
               <svg class="checkbox-container__checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
               </svg>
             </label>
           </div>
-          <p class="container__item-title container__item-title_checked">Подтвержден</p>
         </div>
         <div class="container__item">
           <div class="checkbox-container">
-            <label>
+            <label class="checkbox-container__wrapper">
               <input type="checkbox" class="checkbox-container__area" />
+              <span class="checkbox-container__title">Отложен</span>
               <svg class="checkbox-container__checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
               </svg>
             </label>
           </div>
-          <p class="container__item-title">Отложен</p>
         </div>
         <div class="container__item">
           <div class="checkbox-container">
-            <label>
+            <label class="checkbox-container__wrapper">
               <input type="checkbox" class="checkbox-container__area" />
+              <span class="checkbox-container__title">Выполнен</span>
               <svg class="checkbox-container__checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
               </svg>
             </label>
           </div>
-          <p class="container__item-title">Выполнен</p>
         </div>
         <div class="container__item">
           <div class="checkbox-container">
-            <label>
+            <label class="checkbox-container__wrapper">
               <input type="checkbox" class="checkbox-container__area" />
+              <span class="checkbox-container__title">Отменен</span>
               <svg class="checkbox-container__checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
               </svg>
             </label>
           </div>
-          <p class="container__item-title">Отменен</p>
         </div>
       </div>
       <div class="container">
-        <div class="container__item">
-          <p class="container__item-title">Новый</p>
+        <div class="container__item container__item_hidden">
+          <div class="radio-container">
+            <label class="radio-container__wrapper">
+              <input type="radio" name="radio" class="radio-container__area" />
+              <span class="radio-container__title">Новый</span>
+            </label>
+          </div>
         </div>
-        <div class="container__item">
-          <p class="container__item-title">Рассчет</p>
+        <div class="container__item container__item_hidden">
+          <div class="radio-container">
+            <label class="radio-container__wrapper">
+              <input type="radio" name="radio" class="radio-container__area" />
+              <span class="radio-container__title">Рассчет</span>
+            </label>
+          </div>
         </div>
-        <div class="container__item">
-          <p class="container__item-title container__item-title_checked">Подтвержден</p>
+        <div class="container__item container__item_hidden">
+          <div class="radio-container">
+            <label class="radio-container__wrapper">
+              <input type="radio" name="radio" class="radio-container__area" checked />
+              <span class="radio-container__title">Подтвержден</span>
+            </label>
+          </div>
         </div>
-        <div class="container__item">
-          <p class="container__item-title">Отложен</p>
+        <div class="container__item container__item_hidden">
+          <div class="radio-container">
+            <label class="radio-container__wrapper">
+              <input type="radio" name="radio" class="radio-container__area" />
+              <span class="radio-container__title">Отложен</span>
+            </label>
+          </div>
         </div>
-        <div class="container__item">
-          <p class="container__item-title">Выполнен</p>
+        <div class="container__item container__item_hidden">
+          <div class="radio-container">
+            <label class="radio-container__wrapper">
+              <input type="radio" name="radio" class="radio-container__area" />
+              <span class="radio-container__title">Выполнен</span>
+            </label>
+          </div>
         </div>
-        <div class="container__item">
-          <p class="container__item-title">Отменен</p>
+        <div class="container__item container__item_hidden">
+          <div class="radio-container">
+            <label class="radio-container__wrapper">
+              <input type="radio" name="radio" class="radio-container__area" />
+              <span class="radio-container__title">Отменен</span>
+            </label>
+          </div>
         </div>
       </div>
     </div>
     <div class="dropdown-wrapper-bottom">
-      <div class="container">
-        <p class="input-container__title">Номер страницы</p>
-        <label class="input-container__wrapper">
-          <input type="text" name="order" id="order-input"
-            class="input-container__field input-container__field_dropdown" placeholder="Введите номер" />
+      <div class="dropdown-container">
+        <div class="input-container input-container_dropdown">
+          <label class="input-container__title">Номер страницы
+            <input type="text" name="order" class="input-container__field input-container__field_dropdown"
+              placeholder="Введите номер" />
+          </label>
+        </div>
+      </div>
+      <div class="dropdown-container">
+        <label class="input-container__title">Удалить n записей?
+          <button class="button button_color_transparent button_size_small button_text_only button_full-width">
+            Удалить
+          </button>
+          <button class="button button_color_primary button_size_small button_text_only button_full-width">
+            Отмена
+          </button>
         </label>
       </div>
-      <div class="container">
-        <p class="input-container__title">Удалить n записей?</p>
-        <button class="button transparent button_small-text">
-          Удалить
-        </button>
-        <button class="button blue button_small-text">
-          Отмена
-        </button>
-      </div>
-      <div class="container">
-        <p class="input-container__title">Выберите тему</p>
-        <button class="button transparent button_small-size">
-          <svg class="button__icon button__icon_transparent" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="8" r="4" stroke="none" />
-            <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
-            <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
-            <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none" />
-            <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none" />
-            <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none" />
-            <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none" />
-            <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
-            <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
-          </svg>
-          Светлая
-        </button>
-        <button class="button blue button_small-size">
-          <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
-              stroke="none" />
-          </svg>
-          Темная
-        </button>
+      <div class="dropdown-container">
+        <label class="input-container__title">Выберите тему
+          <button class="button button_color_transparent button_size_small button_full-width">
+            <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="4" stroke="none" />
+              <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
+              <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
+              <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none" />
+              <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none" />
+              <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none" />
+              <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none" />
+              <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
+              <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
+            </svg>
+            Светлая
+          </button>
+          <button class="button button_color_primary button_size_small button_full-width">
+            <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
+                stroke="none" />
+            </svg>
+            Темная
+          </button>
+        </label>
       </div>
     </div>
   </div>
@@ -407,8 +434,8 @@
   <div class="pageheader-wrapper">
     <div class="header">
       <h1 class="header__title">Список заказов</h1>
-      <button class="button transparent button_medium-size">
-        <svg class="button__icon button__icon_transparent" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <button class="button button_color_transparent">
+        <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
           <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
@@ -424,8 +451,8 @@
     </div>
     <div class="header">
       <h1 class="header__title">Список заказов</h1>
-      <button class="button transparent button_medium-size">
-        <svg class="button__icon button__icon_transparent" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <button class="button button button_color_transparent">
+        <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <circle cx="8" cy="8" r="4" stroke="none" />
           <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
           <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
@@ -438,32 +465,34 @@
         </svg>
         Светлая тема
       </button>
-      <div class="container container_header">
-        <p class="input-container__title">Выберите тему</p>
-        <button class="button transparent button_small-size">
-          <svg class="button__icon button__icon_transparent" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="8" r="4" stroke="none" />
-            <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
-            <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
-            <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none" />
-            <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none" />
-            <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none" />
-            <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none" />
-            <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
-            <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
-          </svg>
-          Светлая
-        </button>
-        <button class="button blue button_small-size">
-          <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
-              stroke="none" />
-          </svg>
-          Темная
-        </button>
+      <div class="dropdown-container container_header">
+        <label class="input-container__title">Выберите тему
+          <button class="button button_color_transparent button_size_small button_full-width">
+            <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="4" stroke="none" />
+              <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
+              <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
+              <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none" />
+              <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none" />
+              <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none" />
+              <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none" />
+              <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
+              <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
+            </svg>
+            Светлая
+          </button>
+          <button class="button button_color_primary button_size_small button_full-width">
+            <svg class="button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
+                stroke="none" />
+            </svg>
+            Темная
+          </button>
+        </label>
       </div>
     </div>
+  </div>
   </div>
 </body>
 

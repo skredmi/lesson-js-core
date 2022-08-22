@@ -15,7 +15,7 @@
 }
 
 .input-container__button_search {
-  top: 0;
+  bottom: 0.5rem;
   right: 14.5rem;
 }
 
